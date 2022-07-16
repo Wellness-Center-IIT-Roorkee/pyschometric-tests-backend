@@ -1,0 +1,23 @@
+[package]
+name = "psychometric-test"
+version = "0.1.0"
+edition = "2021"
+authors = ["Mrinal <kmrinal19@gmail.com"]
+readme = "README.md"
+license = "GPL-3.0"
+license-file = "LICENCE"
+
+[dependencies]
+chrono = {version = "0.4.19", features = ["serde"]}
+diesel = { version = "1.4.8", features = ["postgres", "chrono"] }
+dotenv = "0.15.0"
+jsonwebtoken = "8.1.1"
+rand = "0.8.5"
+reqwest = { version = "0.11.11", features = ["json"] }
+rocket = { version = "0.5.0-rc.2", features = ["json", "secrets"] }
+serde = { version = "1.0.139", features = ["derive"] }
+
+[dependencies.rocket_sync_db_pools]
+version = "0.1.0-rc.2"
+default-features = false
+features = ["diesel_postgres_pool"]

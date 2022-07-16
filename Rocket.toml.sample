@@ -1,0 +1,2 @@
+[global.databases]
+psychometric_tool = <database url>
