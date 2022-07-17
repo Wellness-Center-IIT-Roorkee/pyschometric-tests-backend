@@ -4,3 +4,7 @@ Rocket.toml
 
 # Build Files
 /target
+
+# Media
+media/
+

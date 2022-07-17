@@ -87,8 +87,6 @@ pub async fn get_access_token(code: &str, client: &reqwest::Client) -> Option<St
             let token_response = res.json::<TokenResponse>().await.unwrap();
             Some(token_response.access_token)
         }
-        Err(_) => {
-            None
-        }
+        Err(_) => None,
     }
 }
