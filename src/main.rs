@@ -28,7 +28,11 @@ fn rocket() -> _ {
                 test_routes::create_test,
                 test_routes::update_test,
                 test_routes::get_tests,
-                test_routes::get_test
+                test_routes::get_test,
+                test_routes::get_questions,
+                test_routes::create_questions,
+                test_routes::delete_question,
+                test_routes::get_test_score,
             ],
         )
         .attach(DBPool::fairing())

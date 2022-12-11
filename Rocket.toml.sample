@@ -1,2 +1,8 @@
 [global.databases]
 psychometric_tool = <database url>
+
+[global]
+limits = { file = 10000000, form = 10000000 }
+
+[default]
+secret_key = "<secret_key>"

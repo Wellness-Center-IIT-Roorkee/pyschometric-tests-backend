@@ -19,6 +19,9 @@ pub struct User {
 
     #[serde(skip_serializing)]
     pub created_at: DateTime<Utc>,
+
+    #[serde(skip_deserializing)]
+    pub is_admin: Option<bool>,
 }
 
 #[derive(AsChangeset, Debug, Clone, Deserialize, PartialEq, Serialize, Queryable, Insertable)]

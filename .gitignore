@@ -8,3 +8,5 @@ Rocket.toml
 # Media
 media/
 
+# macos specific files
+.DS_Store
